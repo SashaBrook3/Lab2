@@ -82,57 +82,57 @@
         </footer>
         <br>
         <br>
+        <form>
+            <fieldset>
+            <legend id="6">Meeting Feedback</legend>
+
+            <label for="name">Participant Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="date">Meeting Date:</label><br>
+            <input type="date" id="date" name="date"><br><br>
+
+            <p>How familiar were you with HTML before this meeting?</p>
+            <input type="radio" id="beginner" name="experience" value="beginner">
+            <label for="beginner">Beginner</label><br>
+            <input type="radio" id="intermediate" name="experience" value="intermediate">
+            <label for="intermediate">Intermediate</label><br>
+            <input type="radio" id="advanced" name="experience" value="advanced">
+            <label for="advanced">Advanced</label><br><br>
+
+            <p>Which HTML topics did you learn about? (Select all that apply)</p>
+            <input type="checkbox" id="elements" name="topics" value="elements">
+            <label for="elements">Document metadata</label><br>
+            <input type="checkbox" id="forms" name="topics" value="forms">
+            <label for="forms">Content sectioning</label><br>
+            <input type="checkbox" id="semantic" name="topics" value="semantic">
+            <label for="semantic">Text semantics</label><br>
+            <input type="checkbox" id="media" name="topics" value="media">
+            <label for="media">Images & Multimedia</label><br><br>
+
+            <label for="favorite">Favorite Topic from the Meeting:</label><br>
+            <select id="favorite" name="favorite">
+                <option value="elements">Document metadata</option>
+                <option value="forms">Content sectioning</option>
+                <option value="semantic">Text semantics</option>
+                <option value="media">Images & Multimedia</option>
+            </select><br><br>
+
+            <label for="tool">What did you use to take notes?</label><br>
+            <input list="tools" id="tool" name="tool">
+            <datalist id="tools">
+                <option value="Ipad">
+                <option value="Phone">
+                <option value="Laptop">
+                <option value="Notebook">
+            </datalist><br><br>
+
+            <label for="comments">What did you find most helpful in this HTML meeting?</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+            <button type="submit">Submit Feedback</button>
+
+            </fieldset>
+        </form>
     </body>
-    <form>
-    <fieldset>
-        <legend id="6">Meeting Feedback</legend>
-
-        <label for="name">Participant Name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
-
-        <label for="date">Meeting Date:</label><br>
-        <input type="date" id="date" name="date"><br><br>
-
-        <p>How familiar were you with HTML before this meeting?</p>
-        <input type="radio" id="beginner" name="experience" value="beginner">
-        <label for="beginner">Beginner</label><br>
-        <input type="radio" id="intermediate" name="experience" value="intermediate">
-        <label for="intermediate">Intermediate</label><br>
-        <input type="radio" id="advanced" name="experience" value="advanced">
-        <label for="advanced">Advanced</label><br><br>
-
-        <p>Which HTML topics did you learn about? (Select all that apply)</p>
-        <input type="checkbox" id="elements" name="topics" value="elements">
-        <label for="elements">Document metadata</label><br>
-        <input type="checkbox" id="forms" name="topics" value="forms">
-        <label for="forms">Content sectioning</label><br>
-        <input type="checkbox" id="semantic" name="topics" value="semantic">
-        <label for="semantic">Text semantics</label><br>
-        <input type="checkbox" id="media" name="topics" value="media">
-        <label for="media">Images & Multimedia</label><br><br>
-
-        <label for="favorite">Favorite Topic from the Meeting:</label><br>
-        <select id="favorite" name="favorite">
-            <option value="elements">Document metadata</option>
-            <option value="forms">Content sectioning</option>
-            <option value="semantic">Text semantics</option>
-            <option value="media">Images & Multimedia</option>
-        </select><br><br>
-
-        <label for="tool">What did you use to take notes?</label><br>
-        <input list="tools" id="tool" name="tool">
-        <datalist id="tools">
-            <option value="Ipad">
-            <option value="Phone">
-            <option value="Laptop">
-            <option value="Notebook">
-        </datalist><br><br>
-
-        <label for="comments">What did you find most helpful in this HTML meeting?</label><br>
-        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
-
-        <button type="submit">Submit Feedback</button>
-
-        </fieldset>
-    </form>
 </html>
