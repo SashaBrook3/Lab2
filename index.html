@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meeting Minutes</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is an HTML file for Lab 2.">
+        <meta name="author" content="Sasha">
+        <link rel="icon" type="image/svg+xml" href="Logo.svg">
+    </head>
+    <body>
+        <header>
+            <h1>Meeting Minutes</h1>
+            <h2>Learning HTML</h2>
+            <h3>04-14-2026</h3>
+            <hr>
+            <nav>
+                <ul>
+                    <a href="#1">Agenda</a> |
+                    <a href="#2">Attendance list</a> |
+                    <a href="#3">Business</a> |
+                    <a href="#4">Questions/Comments</a> |
+                    <a href="#5">Meeting Notes</a> |
+                    <a href="#6">Meeting Feedback</a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <h2 id="1"><span>Agenda</span></h2>
+                <p>In today's meeting we're going to learn how to use HTML 
+                    by creating a meeting minutes html file. <br>We will go over
+                    the basics of document metadata, content sectioning, text
+                    content, inline text semantics, images <br>and multimedia, 
+                    interactive elements, and forms.</p>
+            </div>
+            <section>
+                <h2 id="2">Attendance list</h2>
+                <ol>
+                    <li>Logan</li>
+                    <li>Miles</li>
+                    <li>Cal</li>
+                    <li>Sasha</li>
+                </ol>
+            </section>
+            <section>
+                <h2 id="3">Business</h2>
+                <h3>&emsp;<i>Unfinished</i></h3>
+                <ul>
+                    <li>Determine weekly meeting time</li>
+                    <li>Determine meeting durations</li>
+                </ul>
+                <h3>&emsp;<i>New</i></h3>
+                <ul>
+                    <li>Complete Lab 2</li>
+                </ul>
+            </section>
+            <section>
+                <details>
+                    <summary id="4"><b>Questions/Comments</b></summary>
+                    <ol>
+                        <li>How long does each lab take?</li>
+                        <li>Will we use HTML in CSE 110 in the future?</li>
+                        <li><em>We should start earlier next time.</em></li>
+                    </ol>
+                </details>
+            </section>
+            <section>
+                <details>
+                    <summary id="5"><b>Meeting Notes</b></summary>
+                        <img src="MeetingNotes.jpg" width="150" height="200" alt="To-do list written for the meeting">
+                        <audio src="MeetingAudio.mp3" controls></audio>
+                        <video width="400" height="200" controls>
+                        <source src="MeetingVideo.mp4" type="video/mp4">
+                        </video>
+                </details>
+            </section>
+        </main>
+        <br>
+        <footer>
+            <address>
+                Contact the group lead at <strong>s3terry@ucsd.edu</strong><br>
+                9500 Gilman Dr. La Jolla, CA 92093
+            </address>
+        </footer>
+    </body>
+    <br>
+    <br>
+    <form>
+    <fieldset>
+        <legend id="6">Meeting Feedback</legend>
+
+        <label for="name">Participant Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="date">Meeting Date:</label><br>
+        <input type="date" id="date" name="date"><br><br>
+
+        <p>How familiar were you with HTML before this meeting?</p>
+        <input type="radio" id="beginner" name="experience" value="beginner">
+        <label for="beginner">Beginner</label><br>
+        <input type="radio" id="intermediate" name="experience" value="intermediate">
+        <label for="intermediate">Intermediate</label><br>
+        <input type="radio" id="advanced" name="experience" value="advanced">
+        <label for="advanced">Advanced</label><br><br>
+
+        <p>Which HTML topics did you learn about? (Select all that apply)</p>
+        <input type="checkbox" id="elements" name="topics" value="elements">
+        <label for="elements">Document metadata</label><br>
+        <input type="checkbox" id="forms" name="topics" value="forms">
+        <label for="forms">Content sectioning</label><br>
+        <input type="checkbox" id="semantic" name="topics" value="semantic">
+        <label for="semantic">Text semantics</label><br>
+        <input type="checkbox" id="media" name="topics" value="media">
+        <label for="media">Images & Multimedia</label><br><br>
+
+        <label for="favorite">Favorite Topic from the Meeting:</label><br>
+        <select id="favorite" name="favorite">
+            <option value="elements">Document metadata</option>
+            <option value="forms">Content sectioning</option>
+            <option value="semantic">Text semantics</option>
+            <option value="media">Images & Multimedia</option>
+        </select><br><br>
+
+        <label for="tool">What did you use to take notes?</label><br>
+        <input list="tools" id="tool" name="tool">
+        <datalist id="tools">
+            <option value="Ipad">
+            <option value="Phone">
+            <option value="Laptop">
+            <option value="Notebook">
+        </datalist><br><br>
+
+        <label for="comments">What did you find most helpful in this HTML meeting?</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Submit Feedback</button>
+
+        </fieldset>
+    </form>
+</html>
